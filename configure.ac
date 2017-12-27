@@ -14,7 +14,6 @@ AM_PROG_AR
 AC_PROG_LIBTOOL
 AC_SUBST(LIBTOOL)
 
-AC_CHECK_LIB([bsd], [arc4random])
 AC_CHECK_LIB([dl], [dlopen])
 
 AX_LIB_MYSQL([5.7.0])

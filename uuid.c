@@ -23,7 +23,7 @@ ssiuuidgen(char *buffer)
     memset(buffer, '\0', SSI_UUID_BUF_LEN);
     for (i = 0, pos = 0; i < 16 && pos < SSI_UUID_BUF_LEN - 2; i++) {
 
-        uint8_t r = (uint8_t) arc4random();
+        uint8_t r = (uint8_t) random();
 
         /* set some special bits */
         if (i == 6) {
